@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readance Side Panel</title>
+    <link rel="stylesheet" href="src/css/sidepanel.css" />
+  </head>
+  <body>
+    <div class="sidepanel-container">
+      <header>
+        <h1>Readance</h1>
+        <p class="subtitle">페이지 콘텐츠를 더 읽기 쉽게 만들어 드립니다</p>
+      </header>
+
+      <section class="controls">
+        <button id="analyzeBtn" class="primary-btn">페이지 분석</button>
+        <button id="readModeBtn" class="primary-btn">읽기 모드</button>
+      </section>
+
+      <section class="settings">
+        <h2>설정</h2>
+
+        <div class="setting-item">
+          <label for="theme">테마</label>
+          <select id="theme">
+            <option value="light">라이트 모드</option>
+            <option value="dark">다크 모드</option>
+          </select>
+        </div>
+
+        <div class="setting-item">
+          <label for="fontSize">글꼴 크기</label>
+          <div class="range-container">
+            <input type="range" id="fontSize" min="12" max="24" value="16" />
+            <span id="fontSizeValue">16px</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-info">
+        <h2>페이지 정보</h2>
+        <div id="pageStats" class="stats-container">
+          <p>페이지를 분석하려면 '페이지 분석' 버튼을 클릭하세요.</p>
+        </div>
+      </section>
+
+      <section class="bookmarks" id="bookmarkSection">
+        <h2>저장된 북마크</h2>
+        <div id="bookmarkList" class="bookmark-list">
+          <p>저장된 북마크가 없습니다.</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="src/js/sidepanel.js"></script>
+  </body>
+</html>
