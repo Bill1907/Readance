@@ -7,6 +7,6 @@ async function bootstrap() {
   // NestJS는 기본적으로 ConfigModule을 사용하거나 dotenv를 직접 import해야 합니다
   const port = process.env.PORT || 8080;
   console.log(`Application is running on port: ${port}`);
-  await app.listen(port);
+  await app.listen(port, '0.0.0.0');
 }
 bootstrap();
