@@ -1,3 +1,6 @@
 .env
 .cursor
 .vscode
+TODO.md
+node_modules
+dist
