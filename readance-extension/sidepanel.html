@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readance Side Panel</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* Ensure body can take full height */
+        width: 100%; /* Ensure body can take full width */
+        overflow: hidden; /* Prevent scrollbars on body/html if not needed */
+      }
+      #root {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/sidepanel/SidePanel.tsx"></script>
+  </body>
+</html>
